@@ -1,0 +1,51 @@
+Feature,Importance
+PointsDifference,146
+SurfaceWinRateDifference,74
+ExperienceDifference,71
+RankDifference,70
+Player2SurfaceMatchesBefore,69
+Recent5WinRateDifference,64
+Player1SurfaceMatchesBefore,60
+DaysSinceLastMatchDifference,55
+Player2SurfaceWinRateBefore,45
+Player2MatchesBefore,44
+WinRateDifference,44
+SurfaceMatchesDifference,44
+Player1Points,43
+Player2Points,41
+Player1WinRateBefore,39
+Player2WinRateBefore,39
+Player1SurfaceWinRateBefore,34
+Player2Rank,32
+Player1MatchesBefore,31
+Series_Grand Slam,24
+Player1H2HWinRateBefore,23
+Player2DaysSinceLastMatch,23
+Player1DaysSinceLastMatch,18
+Player2H2HWinRateBefore,15
+Player1Rank,15
+Player1Recent5WinRate,12
+Player2Recent5WinRate,11
+H2HMatchesBefore,4
+Series_ATP500,2
+Best of_3.0,2
+Series_ATP250,1
+Series_Masters 1000,1
+Court_Indoor,1
+DifferenceH2HWinRateBefore,1
+Round_The Final,1
+Round_2nd Round,1
+MissingPlayer2DaysSinceLastMatch,0
+MissingPlayer1DaysSinceLastMatch,0
+Surface_Clay,0
+Surface_Grass,0
+Court_Outdoor,0
+Series_Masters Cup,0
+Round_1st Round,0
+Surface_Hard,0
+Round_3rd Round,0
+Round_4th Round,0
+Round_Round Robin,0
+Round_Quarterfinals,0
+Round_Semifinals,0
+Best of_5.0,0
