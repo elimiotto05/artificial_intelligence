@@ -1,0 +1,51 @@
+Feature,Importance
+PointsDifference,0.2615842
+WinRateDifference,0.14398175
+SurfaceWinRateDifference,0.09334506
+RankDifference,0.072031565
+SurfaceMatchesDifference,0.056333944
+Series_Grand Slam,0.029853122
+Player1Rank,0.028365733
+Player2Points,0.027178926
+Player2SurfaceMatchesBefore,0.026937332
+Player1SurfaceMatchesBefore,0.02596786
+Recent5WinRateDifference,0.025798574
+Player2WinRateBefore,0.024105309
+Player1WinRateBefore,0.021648979
+Player2SurfaceWinRateBefore,0.017209474
+Player2Rank,0.015827306
+Player1Recent5WinRate,0.014317428
+Player1Points,0.013615892
+Player1H2HWinRateBefore,0.012869682
+DaysSinceLastMatchDifference,0.012501444
+Player2MatchesBefore,0.011826991
+ExperienceDifference,0.011256034
+Player1MatchesBefore,0.010867842
+Best of_3.0,0.010046451
+Player2DaysSinceLastMatch,0.01000257
+Player1DaysSinceLastMatch,0.008109755
+Player1SurfaceWinRateBefore,0.006709501
+Series_Masters 1000,0.0042318124
+H2HMatchesBefore,0.0031784086
+Round_2nd Round,0.00029705174
+Player2Recent5WinRate,0.0
+MissingPlayer1DaysSinceLastMatch,0.0
+MissingPlayer2DaysSinceLastMatch,0.0
+DifferenceH2HWinRateBefore,0.0
+Player2H2HWinRateBefore,0.0
+Series_ATP250,0.0
+Series_ATP500,0.0
+Court_Outdoor,0.0
+Series_Masters Cup,0.0
+Surface_Clay,0.0
+Surface_Grass,0.0
+Surface_Hard,0.0
+Court_Indoor,0.0
+Round_1st Round,0.0
+Round_3rd Round,0.0
+Round_Quarterfinals,0.0
+Round_4th Round,0.0
+Round_Round Robin,0.0
+Round_Semifinals,0.0
+Round_The Final,0.0
+Best of_5.0,0.0
