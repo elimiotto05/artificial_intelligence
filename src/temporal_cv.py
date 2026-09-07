@@ -1,5 +1,5 @@
 
-# for each year, all prev uears are used for training
+# for each year, all prev years are used for training
 validation_years = [ 
     2019,
     2020,
