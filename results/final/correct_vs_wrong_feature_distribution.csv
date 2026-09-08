@@ -1,0 +1,7 @@
+Characteristic,All models correct,All models wrong
+Number of matches,2617.0,1176.0
+Median absolute rank difference,51.0,43.0
+Median absolute points difference,1195.0,696.5
+Median absolute win-rate difference,0.1281761716544325,0.09609487467161605
+Median absolute surface win-rate difference,0.1346153846153846,0.10414523920835275
+Ranking upset percentage,4.508979747802828,93.87755102040816
