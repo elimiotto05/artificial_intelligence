@@ -56,17 +56,16 @@ categorical_features = [
 
 def fit_preprocessor(training_data):
     
-    # Calculate the median for each numeric feature in the training data
+    # Calculate imputation values using training data only
     numeric_medians= training_data[numeric_features].median()
-    
-    # Calculate the mode for each categorical feature in the training data
+
     categorical_modes = {}
 
     for column in categorical_features:
         training_mode = training_data[column].mode().iloc[0]
         categorical_modes[column] = training_mode
    
-    # Create a copy of the categorical features from the training data, we don't want to modify the original training data 
+    # Copy categorical features to avoid modifying the original data
     categorical_training = training_data[categorical_features].copy()
     
     # Fill missing values in the categorical features with the mode of each column
@@ -74,11 +73,9 @@ def fit_preprocessor(training_data):
         categorical_training[column] = (categorical_training[column].fillna(categorical_modes[column]))
     
     # Create a OneHotEncoder instance to encode the categorical features
-    #sparse_output=False ensures that the output is a dense array instead of a sparse matrix
-    #handle_unknown="ignore" ensures that if a category is encountered in the validation or test set that was not present in the training set, it will be ignored instead of raising an error
     one_hot_encoder = OneHotEncoder(
-        sparse_output=False,
-        handle_unknown="ignore"
+        sparse_output=False,    # Use a dense array representation
+        handle_unknown="ignore" # Ignore categories in validation/test data not present in the training set
     )
 
     one_hot_encoder.fit(
@@ -107,15 +104,14 @@ def transform_data(data, numeric_medians, categorical_modes, one_hot_encoder):
     # Transform the categorical features using the fitted OneHotEncoder
     categorical_encoded = one_hot_encoder.transform(categorical_data)
     
-    # Get appropriate column names
+    # Get column names for the one-hot encoded features
     encoded_feature_names = (
         one_hot_encoder.get_feature_names_out(
             categorical_features
         )
     )
     
-    #Create a DataFrame for the encoded categorical features with appropriate column names
-    #index=data.index ensures that the index of the new DataFrame matches the index of the original data
+    # Convert encoded features to a DataFrame while preserving the original index
     encoded_categorical_df = pd.DataFrame(
         categorical_encoded,
         columns=encoded_feature_names,
@@ -123,10 +119,10 @@ def transform_data(data, numeric_medians, categorical_modes, one_hot_encoder):
     )
     
     # Concatenate the numeric features and the encoded categorical features into a single DataFrame
-    #axis=1 ensures that the concatenation is done column-wise
+    
     transformed_data = pd.concat(
         [numeric_data, encoded_categorical_df],
-        axis=1
+        axis=1  # ensures that the concatenation is done column-wise
     )
     
     return transformed_data
